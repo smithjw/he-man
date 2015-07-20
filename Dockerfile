@@ -45,5 +45,5 @@ ADD hubot/scripts/hubot-leitwerk.coffee /hubot/scripts/
 ADD hubot/scripts/hubot-lunch.coffee /hubot/scripts/
 
 # And go
-# CMD ["/bin/sh", "-c", "aws s3 cp --region ap-southeast-2 s3://franks-creds/env.sh .; . ./env.sh; bin/hubot --adapter slack"]
-CMD bin/hubot -a slack
+CMD ["/bin/sh", "-c", "aws s3 cp --region ap-southeast-2 s3://franks-creds/env.sh .; . ./env.sh; bin/hubot --adapter slack"]
+# CMD bin/hubot -a slack
