@@ -35,9 +35,9 @@ RUN npm install hubot-auth --save && npm install
 RUN npm install hubot-github --save && npm install
 RUN npm install hubot-alias --save && npm install
 RUN npm install hubot-youtube --save && npm install
-RUN npm install hubot-cheers —save && npm install
-RUN npm install hubot-witty —save && npm install
-RUN npm install hubot-aws —save && npm install
+RUN npm install hubot-cheers --save && npm install
+RUN npm install hubot-witty --save && npm install
+RUN npm install hubot-aws --save && npm install
 
 # Activate some built-in scripts
 ADD hubot/hubot-scripts.json /hubot/
