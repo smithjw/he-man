@@ -35,13 +35,16 @@ RUN npm install hubot-auth --save && npm install
 RUN npm install hubot-github --save && npm install
 RUN npm install hubot-alias --save && npm install
 RUN npm install hubot-youtube --save && npm install
+RUN npm install hubot-cheers —save && nom install
+RUN npm install hubot-witty —save && nom install
+RUN npm install hubot-aws —save && nom install
+
 
 # Activate some built-in scripts
 ADD hubot/hubot-scripts.json /hubot/
 ADD hubot/external-scripts.json /hubot/
 
 RUN npm install cheerio --save && npm install
-ADD hubot/scripts/hubot-leitwerk.coffee /hubot/scripts/
 ADD hubot/scripts/hubot-lunch.coffee /hubot/scripts/
 
 # And go

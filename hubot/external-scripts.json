@@ -11,5 +11,8 @@
   "hubot-youtube",
   "hubot-standup-alarm",
   "hubot-auth",
-  "hubot-alias"
+  "hubot-alias",
+  "hubot-witty",
+  "hubot-cheers",
+  "hubot-aws"
 ]
