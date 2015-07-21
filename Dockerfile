@@ -32,7 +32,6 @@ RUN npm install hubot-standup-alarm --save && npm install
 RUN npm install hubot-auth --save && npm install
 RUN npm install hubot-google-translate --save && npm install
 RUN npm install hubot-auth --save && npm install
-RUN npm install hubot-github --save && npm install
 RUN npm install hubot-alias --save && npm install
 RUN npm install hubot-youtube --save && npm install
 RUN npm install hubot-cheers --save && npm install
@@ -41,8 +40,5 @@ RUN npm install hubot-cheers --save && npm install
 ADD hubot/hubot-scripts.json /hubot/
 ADD hubot/external-scripts.json /hubot/
 
-RUN npm install cheerio --save && npm install
-
 # And go
-CMD ["/bin/sh", "-c", "aws s3 cp --region ap-southeast-2 s3://franks-creds/env.sh .; . ./env.sh; bin/hubot --adapter slack"]
-# CMD bin/hubot -a slack
+CMD ["/bin/sh", "-c", "aws s3 cp --region ap-southeast-2 s3://bot-creds/frank/env.sh .; . ./env.sh; bin/hubot --adapter slack"]
