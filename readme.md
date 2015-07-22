@@ -1,9 +1,9 @@
-Tatsu HuBot
+Frank HuBot
 ===========
 
-Idea: Setup HuBot inside a Docker container and run it on AWS. Automatically build and deploy it with CirclCI.
+Idea: Setup HuBot inside a Docker container and run it on AWS with the ability to automatically build and deploy with BuildKite.
 
-[![Circle CI](https://circleci.com/gh/pgarbe/tatsu-hubot.svg?style=svg)](https://circleci.com/gh/pgarbe/tatsu-hubot)
+[![Build status](https://badge.buildkite.com/d3efbf8e17da885df4c2cbbb9f1bd0406384bb6d7c9af68657.svg)](https://buildkite.com/ca/building-frank)
 
 ### Deploy manual to AWS ECS
 1. Setup new EC2 Container Instance as described [here](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_GetStarted.html)
@@ -16,7 +16,7 @@ Idea: Setup HuBot inside a Docker container and run it on AWS. Automatically bui
 
 ### How to build and run it
     docker build -t tatsu .
-    docker run -e HUBOT_SLACK_TOKEN=xxx -d tatsu
+    docker run -e HUBOT_SLACK_TOKEN=xxx -d frank-bot
 
 ### Add new scripts
 1. Add the following line in the dockerfile to install the NodeJS module:
