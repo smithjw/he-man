@@ -1,4 +1,4 @@
-Frank HuBot
+Doom HuBot
 ===========
 
 Idea: Setup HuBot inside a Docker container and run it on AWS with the ability to automatically build and deploy with BuildKite.
@@ -15,8 +15,8 @@ Idea: Setup HuBot inside a Docker container and run it on AWS with the ability t
 
 
 ### How to build and run it
-    docker build -t tatsu .
-    docker run -e HUBOT_SLACK_TOKEN=xxx -d frank-bot
+    docker build -t doom-bot .
+    docker run -e HUBOT_SLACK_TOKEN=xxx -d doom-bot
 
 ### Add new scripts
 1. Add the following line in the dockerfile to install the NodeJS module:
