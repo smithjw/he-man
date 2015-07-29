@@ -24,7 +24,7 @@ USER	hubot
 WORKDIR /hubot
 
 # Install hubot
-RUN yo hubot --owner="James Smith <james@cultureamp.com>" --name="he-man" --adapter=slack --defaults
+RUN yo hubot --owner="James Smith <james@smithjw.me>" --name="he-man" --adapter=slack --defaults
 
 # Some adapters / scripts
 RUN npm install hubot-slack --save && npm install
