@@ -5,12 +5,13 @@
   "hubot-google-translate",
   "hubot-pugme",
   "hubot-maps",
-  "hubot-redis-brain",
   "hubot-rules",
   "hubot-shipit",
   "hubot-youtube",
   "hubot-standup-alarm",
   "hubot-auth",
   "hubot-alias",
-  "hubot-cheers"
+  "hubot-cheers",
+  "hubot-google",
+  "hubot-s3-brain"
 ]
